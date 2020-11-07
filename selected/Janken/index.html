@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h2> THE ULTIMATE DECISION TOOL!</h2>
+    <p>Stuck with three way split decision. Use your imagination to battle your choices.</p>
+    <div class="directions">    
+        <ul>Example: Socks, sandals, or both? Sock is Rock, Sandals, paper...you get it.</ul>
+        <li>Step 1: Mentally assign options to an icon of your choosing.</li>
+        <li>Step 2: Pick your favorable item. The choice you desire to win.</li>
+        <li>Step 3: Blink and realize you've missed an epic battle of ages.</li>
+        <li>Step 4: Wonder what happened to step three.</li>
+        <li>Step 5: Stop being silly and get back to work...but, like, after the next two if you win.</li>
+    </div>
+    <br>
+    <h1>CHOOSE YOUR WEAPON</h1>
+    <div class="selections">
+        <!-- data selection links to JS -->
+        <button class="selection" data-selection="rock">💎ROCK -</button>
+        <button class="selection" data-selection="paper">🧻 PAPER -</button>
+        <button class="selection" data-selection="scissors">✂️ SCISSORS  </button>
+    </div>
+    <div class="results">
+        <div>
+            <h3>Player 1 Score =
+            <span class="result-score" data-your-score>0</span></h3>
+        </div>
+        <div data-final-column>
+            <h3>Computer Score =
+            <span class="result-score" data-computer-score>0</span></h3>
+        </div>
+    
+    </div>
+</body>
+</html>

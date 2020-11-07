@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Header -->
+<head>
+    <meta charset="UTF-8">
+    <title>Gear Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="style.css" rel='stylesheet'>    
+</head>
+ 
+<!-- GEAR SECTION start -->
+<body>
+    <div class="container">
+            
+        <!-- Nav Bar Start-->
+        <div class="nav-wrap">
+            <div class="left-hand">
+                <div class="nav-link">
+                    <a href="index.html">HOME</a>
+                </div>
+                
+                <div class="nav-link">
+                    <a href="gear.html">GEAR</a>
+                </div>
+            </div>
+                
+            <div class="right-hand">
+                <div class="logo">
+                    <a href="https://tkdguy85.github.io/helloworld/">by DG3</a>
+                    <p class="visit">Visit my page!</p>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End-->
+
+        <div class="welcome">
+            <p>Photography has always been a bit of a passive hobby for me.</p> <p>Nonetheless, I figured I'd list my setup to show people that you can have fun for a lot less than you'd think.</p>
+        </div>
+
+        <div class="gear-pics">
+            <div class="pic-wrap">
+                <div class="gear-background" style="background-image: url(gear/setup2.JPG)"></div>
+                <div class="img-text">
+                    <h2 class="text">My main weapon combo of choice for multiple aspects of photography. Nikon 3200 (red) paired with an Opteka 500mm lens. Camera kit was $450 at the time.</h2>
+                </div>
+            </div>
+
+            <div class="pic-wrap">
+                <div class="gear-background" style="background-image: url(gear/kit35.JPG)"></div>
+                <div class="img-text">
+                    <h2 class="text">My standard 18-55mm kit lens with a wide-angle macro attachment. Great for shooting close-ups with insects. Part of the camera kit.</h2>
+                </div>
+            </div>
+
+            <div class="pic-wrap">
+                <div class="gear-background" style="background-image: url(gear/quantaray210.JPG)"></div>
+                <div class="img-text">
+                    <h2 class="text">My Quantaray 85-210mm is a great, light weight lens that I commonly use for long-distance landscape shots or tracking birds or planes in action. Purchased for about $80.</h2>
+                </div>
+            </div>
+
+            <div class="pic-wrap">
+                <div class="gear-background" style="background-image: url(gear/opteka500.JPG)"></div>
+                <div class="img-text">
+                    <h2 class="text">My Opteka 500mm is not only a very powerful little mirrored lens, but has been one of my main setups due to it versatility and fast manual focusing, all while being very light and compact. Purchased for $110.</h2>
+                </div>
+            </div>
+
+            <div class="pic-wrap">
+                <div class="gear-background" style="background-image: url(gear/opteka1300.JPG)"></div>
+                <div class="img-text">
+                    <h2 class="text">This Opteka 650-1300mm is very bulky and long, but once setup on a tripod, this has helped me shoot deep sky objects and various planets just as well as my telescopes. Focusing can be a bit challenging, but that's all part of the fun. Purchased around $170.</h2>
+                </div>
+            </div>
+
+            <div class="pic-wrap">
+                <div class="gear-background" style="background-image: url(gear/lens.JPG)"></div>
+                <div class="img-text">
+                    <h2 class="text">That's my lens lineup. Too be totally honest, none of these are deemed high-end lenses by any means, but for a hobbyist like myself, they get the job done. All together with the camera and tripod, I've accumulated this assortment over the past 7-8 years. Even with all of the accessories and other bits, my camera equipment has still costs me less than $1000 USD.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- GEAR SECTION end -->
+
+<!-- Script/JS -->
+    <script>
+        const picWrap = document.querySelectorAll('.pic-wrap')
+
+        picWrap.forEach(icons => {
+            icons.addEventListener("mouseover", () => {
+                icons.childNodes[1].classList.add('img-darken');
+            })
+
+            icons.addEventListener("mouseout", () => {
+                icons.childNodes[1].classList.remove('img-darken');
+            })
+        })
+
+    </script>
+</body>

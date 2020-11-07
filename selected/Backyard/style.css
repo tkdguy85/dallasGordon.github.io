@@ -1,0 +1,157 @@
+/*--- BODY ---*/
+body {
+  font-family: "Cabin", sans-serif;
+  margin-top: 10px;
+  background: linear-gradient(
+    45deg,
+    rgb(67, 147, 163) 0%,
+    rgb(67, 147, 163) 59%,
+    rgb(93, 161, 169) 59%,
+    rgb(93, 161, 169) 65%,
+    rgb(119, 175, 175) 65%,
+    rgb(119, 175, 175) 70%,
+    rgb(145, 190, 181) 70%,
+    rgb(145, 190, 181) 73%,
+    rgb(171, 204, 187) 73%,
+    rgb(171, 204, 187) 78%,
+    rgb(197, 218, 193) 78%,
+    rgb(197, 218, 193) 100%
+  );
+}
+.welcome {
+  margin-bottom: 2em;
+  text-align: center;
+  font-size: 1.6em;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/*--- NAV BAR ---*/
+.nav-wrap {
+  display: flex;
+  padding: 40px;
+  justify-content: space-between;
+}
+
+.left-hand {
+  display: flex;
+}
+
+.nav-wrap > .left-hand > div {
+  font-size: 3em;
+  margin-right: 20px;
+}
+
+.nav-wrap > .right-hand > div {
+  font-size: 2em;
+  margin-left: 20px;
+}
+
+.logo a {
+  color: rgb(4, 0, 255);
+}
+
+.logo:hover {
+  color: rgb(255, 0, 221);
+  font-weight: bolder;
+  font-size: large;
+}
+
+.visit {
+  font-size: medium;
+  margin-top: 0%;
+}
+
+/*--- NAV BAR EFFECTS ---*/
+.nav-link {
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.5s;
+  height: 60px;
+}
+
+.nav-link:hover {
+  border-bottom: 3px dashed blue;
+}
+
+.nav-link a:hover {
+  color: rgb(85, 5, 61);
+  font-weight: 900;
+}
+
+.nav-link a {
+  color: blue;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+/*--- MAIN ---*/
+.welcome {
+  color: darkblue;
+}
+
+.pic-intro {
+  display: grid;
+  position: relative;
+}
+
+.picture-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pic-wrap {
+  position: relative;
+}
+
+.img-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+}
+
+.img-text {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  align-items: center;
+  height: 100%;
+}
+
+.img-text .text {
+  transition: 1s;
+  color: transparent;
+  font-weight: bold;
+}
+
+.img-text:hover .text {
+  font-weight: bold;
+  color: goldenrod;
+}
+
+.img-darken {
+  transition: 1s;
+  filter: brightness(20%);
+}
+
+/*-- Gear Page --*/
+.gear-pics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gear-background {
+  background-size: 100%;
+  background-position: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  max-width: 100%;
+}

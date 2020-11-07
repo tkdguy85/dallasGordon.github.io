@@ -1,0 +1,143 @@
+/* First draft of app. Test on phone for fun */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://cabbi.com/wp-content/uploads/2016/10/IMG_5312-R.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  line-height: 1.5;
+}
+
+#title {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Times New Roman", sans-serif;
+  color: yellow;
+  background-color: rebeccapurple;
+  border: 2px solid goldenrod;
+  border-radius: 1rem;
+  opacity: 90%;
+  width: 100%;
+  margin: auto;
+}
+
+#description {
+  text-align: 2rem;
+  font-size: 22px;
+}
+
+form {
+  border: 2px solid goldenrod;
+  border-radius: 0.2rem;
+  background: green;
+  opacity: 0.9;
+  padding: 20px;
+  width: 350px;
+  margin: auto;
+  color: gold;
+}
+
+.log-form {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+.boxes {
+  margin: auto;
+  display: block;
+  height: 2rem;
+  width: 300px;
+  padding: 0.25rem 0.75rem;
+  background-color: rebeccapurple;
+  border-radius: 0.2rem;
+  border: 2px solid yellow;
+  color: yellow;
+}
+
+.small_boxes {
+  margin: auto;
+  display: block;
+  height: 2rem;
+  width: 160px;
+  background-color: rebeccapurple;
+  border-radius: 0.2rem;
+  border: 2px solid yellow;
+  color: yellow;
+}
+/* Future ideas would be to link this to API
+    or some sort of data tracking.*/
+.sub-button {
+  border-radius: 4px;
+  cursor: pointer;
+  width: 40%;
+  padding: 0.5rem;
+  background: blue;
+  color: yellow;
+}
+
+.sub-button:hover {
+  background-color: purple;
+  border-radius: 5px;
+  border-color: yellow;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container label {
+  cursor: pointer;
+  display: flex;
+}
+
+/* Keep opacity for screen reading purposes */
+.checkbox-container input[type="checkbox"] {
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-container label::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  background-color: rebeccapurple;
+  border: 0.05em solid yellow;
+  border-radius: 0.2em;
+  margin-right: 1em;
+  margin-left: 4em;
+}
+
+.checkbox-container label:hover::before {
+  background-color: yellow;
+}
+
+.checkbox-container input[type="checkbox"]:focus + label::before {
+  box-shadow: 0 0 50px gold;
+}
+
+.checkbox-container input[type="checkbox"]:checked + label::before {
+  content: "\2714";
+  background-color: gold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rebeccapurple;
+}
+
+#textarea {
+  background-color: rebeccapurple;
+  padding: 0.1rem;
+  border: 2px solid yellow;
+  border-radius: 0.2rem;
+  color: gold;
+  align-items: center;
+}

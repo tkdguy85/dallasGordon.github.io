@@ -1,0 +1,43 @@
+/* Very cluttered background image, but initial theme to have hangul print.
+Space above game grid to house tips and other attributes like score, time, etc. */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(
+    45deg,
+    rgb(2, 22, 146) 0%,
+    rgb(20, 39, 165) 58%,
+    rgb(48, 66, 133) 69%,
+    rgb(144, 165, 193) 81%,
+    rgb(144, 165, 193) 85%,
+    rgb(164, 188, 207) 90%,
+    rgb(183, 211, 221) 95%,
+    rgb(183, 211, 221) 100%
+  );
+
+  /* background-image: url(images/bg.jpg);
+  background-repeat: no-repeat; */
+}
+/* Grid Layout for 4x5 trial board */
+.grid {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  height: 400px;
+  width: 500px;
+}
+/* Adjust font for readability and scaling */
+h3 {
+  font-size: 2rem;
+  color: goldenrod;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
